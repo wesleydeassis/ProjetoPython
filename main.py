@@ -1,9 +1,7 @@
-from os import write
 import streamlit as st
-from numpy.core.fromnumeric import size
+
 import controllers.usuarioController as usuarioController
 import models.usuario as usuario
-
 
 with st.form(key="include_usuarios"):
     input_name = st.text_input(label="Insira o seu nome")
