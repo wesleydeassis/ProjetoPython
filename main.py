@@ -11,7 +11,7 @@ with st.form(key="include_usuarios"):
     input_senha = st.text_input(label="Inseira sua senha")
     input_button_submit = st.form_submit_button("Enviar")
 
-    if st.form_submit_button:
+    if input_button_submit:
         usuario.nome = input_name
         usuario.email = input_email
         usuario.departamento = input_departamento

@@ -1,5 +1,10 @@
-import pymysql
+import mysql.connector
 
-cnx = pymysql.connect(host="localhost", database="tcc_outlier",
-                      user="root", password="wesley@adm123")  # Conexão
-cursor = cnx.cursor()  # Executar as querys
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="wesley@adm123",
+    database="tcc_outlier"
+)
+
+mycursor = mydb.cursor()
